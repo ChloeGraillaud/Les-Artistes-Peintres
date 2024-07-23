@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(87, 29, 22);
+}
+.navbar {
+    background-color: rgb(66, 20, 15);
+    padding: 10px;
+    
+}
+.nav-link:hover {
+    background-color: rgb(68, 40, 34);
+    padding: 10px 15px;
+    color:orangered
+}
+.nav-item:not(:last-child) {
+    border-right: 1px solid white;
+    margin-right: 3px;
+}
+.nav-link {
+    margin-right: 15px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 10px 15px;
+}
+.nav-link.active {
+    background-color: rgb(66, 20, 15);
+    color: orangered;
+}
+h1 {
+    font-family: "Inspiration", cursive;
+    color: white;
+    font-size: 50px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-container img {
+    margin-right: 15px;
+}
+h2, p {
+    color:white;
+    font-family: "Roboto", sans-serif;
+}
+h2 {
+    font-size: 40px;
+}
+.banner {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.content {
+    background-color: #88b2a0;
+    padding: 10px;
+    margin-top: 10px;
+}
+.maincontent {
+    background-color: #88b2a0;
+    padding: 10px;
+}
+aside a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 3px;
+
+}
+aside a:hover {
+    color:orangered
+}
+aside {
+    background-color: #88b2a0;
+    padding: 10px;
+    margin-top: 10px;
+}
+.gallery {
+    background-color: #d6d4c4;
+    padding: 50px;
+    margin-top: 20px;
+}
+.gallery h2 {
+    color: rgb(67, 92, 100);
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-body {
+    background-color: black;
+}
+.card-text {
+    text-align: center;
+}
+.card-img-top {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+footer {
+    text-align: center;
+}
+.gallery-content {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    display: none; /* Hide by default */
+}
+
+.gallery-content.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.gallery-content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInBounce 0.6s ease forwards;
+}
+
+@keyframes slideInBounce {
+    0% {
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(10px);
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
